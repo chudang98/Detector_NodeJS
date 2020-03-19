@@ -1,0 +1,41 @@
+[
+    {
+        "string": "Hello my phone is +84374537192 +84331233124"
+    },
+    {
+        "string": "Hello my phone is +84374537192+84331234312 +84131234342  0331234312 331234323"
+    },
+    {
+        "string": "Hello my phone is +843. 74.5. 371.  92"
+    },
+    {
+        "string": "Hello my phone is +84d3. 74----5. 371.  92"
+    },
+    {
+        "string": "Hello my phone is 0374537192a"
+    },
+    {
+        "string": "Hello my phone is (+843) 373-42534"
+    },
+    {
+        "string": "Hello my phone is-0374537192 0531233182"
+    },
+    {
+        "string":  "Hello my phone is 0174537192+84331233312"
+    },
+    {
+        "string":  "Hello my phone is0374537192-+84331233312"
+    },
+    {
+        "string":  "Hello my phone is0374537192/84331233312"
+    },
+    {
+        "string":  "Hello my phone is 0374537192 / 84331233312"
+    },
+    {
+        "string":  "Hello my phone is 0374537192/+84331233312"
+    },
+    {
+        "string":  "Hello my phone is0374537192-84331233312"
+    }
+]
