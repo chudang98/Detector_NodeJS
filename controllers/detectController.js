@@ -10,14 +10,12 @@ exports.detectPhone = async (req, res, next) => {
   var text = req.body.text;
   var result = await detectNumber(text);
   result = result.filter(checkNumber);
-  // await filterNumber(result);
   return res.status(200).json({
     value: result
   });
 };
 exports.detectEmail = async (req, res, next) => {
   var text = req.body.text;
-  console.log(text);
   var result = await detectEmail(text);
 
   return res.status(200).json({
@@ -93,8 +91,8 @@ const runTestcase = async () => {
 const detectEmail = text => {
   var str = text;
   if (text === '' || text == undefined) return [];
-  var regexEmail = /^[a-zA-Z][a-zA-z0-9_\.]{5,64}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/g;
-
+  // var regexEmail = /^[a-zA-Z][a-zA-z0-9_\.]{5,64}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/g;
+  var regexEmail = /([a-zA-Z0-9][a-zA-Z0-9._-]{7,60}@[a-zA-Z0-9][a-zA-Z0-9._-]{2,5}\.[a-zA-Z0-9_-]{2,5})/g;
   res = str.match(regexEmail);
   console.log(res);
   return res;
